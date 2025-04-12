@@ -207,7 +207,7 @@ export default function Home() {
   // Fetch data on component mount and set up polling
   useEffect(() => {
     fetchData()
-    const interval = setInterval(fetchData, 1000) // Poll every 5 seconds
+    const interval = setInterval(fetchData, 20000) // Poll every 5 seconds
     return () => clearInterval(interval) // Cleanup on unmount
   }, [])
 
